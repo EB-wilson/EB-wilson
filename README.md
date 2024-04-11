@@ -68,6 +68,7 @@ object EBwilson: Preson(), IFoxGirl{
         else playGame()
 
         if(Time.time in Time("00:00").num..Time("04:00").num){
+          chat.interrupt()
           stopAll()
           sleep(awakTime = Time.time + (Time.duration("08:00")..Time.duration("10:00")).random())
 
