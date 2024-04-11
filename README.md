@@ -67,7 +67,7 @@ object EBwilson: Preson(), IFoxGirl{
         if (schedule.isBusy()) work()
         else playGame()
 
-        if(Time.time in Time("00:00").num..Time("04:00").num){
+        if(Time.time in Time("00:00").num..Time("04:00").num){ // normally, in UTC+8
           chat.interrupt()
           stopAll()
           sleep(awakTime = Time.time + (Time.duration("08:00")..Time.duration("10:00")).random())
