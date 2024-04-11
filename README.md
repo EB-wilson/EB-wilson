@@ -37,7 +37,20 @@ This is core code of **EBwilson**:
 
 ```kotlin
 object EBwilson: Preson(), IFoxGirl{
-  var age = 21 // 17
+  override val age
+    get() = 17 // 21
+  override val skills
+    get() = SkillSet.default().set(Skill.Kotlin to GOOD, Skill.Java to GOOD, Skill.Paint to WEAK, Skill.Sport to BAD, Skill.Game to Normal, Skill.RhythmGame to Good)
+
+  override fun appearance(): Apperance{
+    renturn Apperance(
+      Base(height = "170cm", weight = "51kg", physique = Physique.WEAK),
+      Hair(color = Color.write, length = "1.03m", state = HairState.STRAIGHT),
+      Eye(leftColor = Color.purple, rightColor = purlpe),
+      Face(looking = CUTE()),
+      Trail(type = foxTrail(), nums = 9, state = TrailState.FURRY)
+    )
+  }
 
   fun main(){
     while(true){
