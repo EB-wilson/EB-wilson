@@ -48,7 +48,7 @@ object EBwilson: Preson(), IFoxGirl{
       Hair(color = Color.write, length = "1.03m", state = HairState.STRAIGHT),
       Eye(leftColor = Color.purple, rightColor = purlpe),
       Face(looking = CUTE()),
-      Trail(type = foxTrail(), nums = 9, state = TrailState.FURRY)
+      Trail(type = foxTrail(), state = TrailState.FURRY)
     )
   }
 
