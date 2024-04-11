@@ -37,9 +37,9 @@ This is core code of **EBwilson**:
 
 ```kotlin
 object EBwilson: Preson(), IFoxGirl{
-  override val age
+  override val age: Int
     get() = 17 // 21
-  override val skills
+  override val skills: SkillSet
     get() = SkillSet.default().set(Skill.Kotlin to GOOD, Skill.Java to GOOD, Skill.Paint to WEAK, Skill.Sport to BAD, Skill.Game to Normal, Skill.RhythmGame to Good)
 
   override fun appearance(): Apperance{
