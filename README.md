@@ -36,7 +36,7 @@ Social apps:
 This is core code of **EBwilson**:
 
 ```kotlin
-object EBwilson: Preson(), IFoxGirl{
+object EBwilson: Person(), IFoxGirl{
   override val age: Int
     get() = 17 // 21
   override val skills: SkillSet
@@ -46,7 +46,8 @@ object EBwilson: Preson(), IFoxGirl{
     renturn Apperance(
       Base(height = "170cm", weight = "51kg", physique = Physique.WEAK),
       Hair(color = Color.write, length = "1.03m", state = HairState.STRAIGHT),
-      Eye(leftColor = Color.purple, rightColor = purlpe),
+      Eye(leftColor = Color.purple, rightColor = purple),
+      Ear(type = foxEar(inner = FoxEarInner.FURRY), color = arrayOf(Color.write, Color.black))
       Face(looking = CUTE()),
       Trail(type = foxTrail(), state = TrailState.FURRY)
     )
